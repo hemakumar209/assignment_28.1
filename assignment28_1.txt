@@ -1,0 +1,54 @@
+1. You are expected to submit the steps you followed for doing all the below subtasks.
+
+• Use the "Sales_Data.xml" file.
+
+Use Sales_data.xml file 
+
+• Access the "xml" file in excel and save it to a comma delimited "csv" file.
+
+Import an XML data file as an XML table
+
+  1.  Click Developer > Import.
+
+	    If you don't see the Developer tab, see Show the Developer tab.
+
+  2.  In the Import XML dialog box, locate and select the XML data file (.xml) you want to import, and click Import.
+
+	    If the XML data file doesn't refer to a schema, Excel infers the schema from the XML data file.
+
+  3.  In the Import Data dialog box, do the following:
+
+	    Select XML table in existing worksheet to import the contents of the XML data file into an XML table in your worksheet at the specified cell location.
+
+SaveAs the file with CSV extension.
+
+
+• Make all the rows where "attractiveness<6" to
+
+	• background color = red, font = 8, font type = italic.
+
+	Select the "attractiveness" column, Go to the home tab & select "Conditional Formatting 
+
+	Select "New Rule" then click on "Format only cell that contain" in the "Edit the rule description"
+
+	Select "less than" in the second drop down & =6 in the third box
+
+	Click on the "Format" & change the "background color = red and font type = italic" we can't change the font size & font face using
+	conditional formatting it can be done using VBA macro.
+
+
+
+• Hide All the rows where "attractiveness<6" by using grouping. Hide in the sense, we should be able to see there is some rows there, which we can unfold to see. Also try hiding the data without grouping.
+
+
+	Go to "Data" then sort the column with "attractiveness" Select the data with "attractiveness<6" go to the "Data" tab and click "Group" it will ask row/column wise select row wise.
+
+
+	Without grouping, select the row with attractiveness<6 then right click & hide the cells.
+
+• Use the same data. The column named "attractiveness" is in general format. It is actually a rating from 1 to 10. Can you prepend "C" before the number. i.e. if it is 1, it should be converted to "C1". Format the column to text type.
+
+
+	For prepend "C" before number we can use formula "=CONCATENATE("C",D2)" in the cell & copy it to the entire column.
+
+	Change the format of the cell by pressing ctrl+1 to open the "format cells" dialog box & change the format to text type.
